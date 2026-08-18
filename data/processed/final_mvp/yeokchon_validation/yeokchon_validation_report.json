@@ -1,0 +1,70 @@
+{
+  "station_validation": {
+    "station": "역촌",
+    "station_line": "6호선",
+    "station_code": "2612",
+    "station_lon": 126.922744,
+    "station_lat": 37.606021,
+    "accessibility": {
+      "processed_accessibility_data_exists": false,
+      "processed_rows": [],
+      "raw_accessibility_data_exists": true,
+      "raw_rows": [
+        {
+          "source_file": "data\\raw\\accessibility\\accessibility_20260818_164540.json",
+          "station_name": "역촌",
+          "station_code": "2612",
+          "facility_name": "승강기)엘리베이터-역촌 내부1",
+          "location": "불광 방면4-2",
+          "oprtngSitu_raw": "M"
+        },
+        {
+          "source_file": "data\\raw\\accessibility\\accessibility_20260818_164540.json",
+          "station_name": "역촌",
+          "station_code": "2612",
+          "facility_name": "승강기)엘리베이터-역촌 외부2",
+          "location": "4번 출입구",
+          "oprtngSitu_raw": "M"
+        }
+      ],
+      "elevator_exists_raw": true,
+      "wheelchair_lift_exists_raw": false,
+      "accessibility_data_missing": false,
+      "note": "시설 존재 여부만 확인했으며 oprtngSitu 값은 실시간 이용 가능 여부로 해석하지 않는다."
+    }
+  },
+  "candidate_count": 155,
+  "baseline_routing_success_count": 155,
+  "flood_overlap_gt_0_count": 5,
+  "alternative_route_count": 9,
+  "actual_overlap_reduction_alternative_count": 0,
+  "top_candidate_count": 0,
+  "additional_checks": [
+    {
+      "name": "불광1동 주민센터",
+      "address": "서울 은평구 진흥로15길 10",
+      "found_in_project_facility_data": true,
+      "matched_count_in_candidate_scope": 2
+    },
+    {
+      "name": "불광보건분소",
+      "address": "서울 은평구 연서로34길 11",
+      "found_in_project_facility_data": false,
+      "matched_count_in_candidate_scope": 0
+    }
+  ],
+  "comparison_case": "CASE C",
+  "final_recommendation": "불광역 3호선 → 불광제1동주민센터를 최종 MVP 후보로 유지 추천",
+  "note": "flood_overlap_ratio는 침수확률이 아니라 전체 경로 길이 중 2022~2025 과거 침수흔적 geometry와 공간적으로 중첩되는 길이 비율이다.",
+  "output_files": [
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_station_validation.json",
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_destination_candidates.csv",
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_baseline_routes.csv",
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_flood_exposed_routes.csv",
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_alternative_routes.csv",
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_top_candidates.json",
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_top_candidates.geojson",
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_vs_bulgwang_comparison.json",
+    "data\\processed\\final_mvp\\yeokchon_validation\\yeokchon_validation_report.json"
+  ]
+}

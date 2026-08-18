@@ -1,0 +1,18 @@
+{
+  "bulgwang_reference": {
+    "station": "불광",
+    "station_line": "3호선",
+    "facility_name": "불광제1동주민센터",
+    "baseline_length_m": 331.712,
+    "alternative_length_m": 333.743,
+    "distance_delta_m": 2.031,
+    "baseline_flood_overlap_length_m": 9.985,
+    "alternative_flood_overlap_length_m": 0.0,
+    "flood_overlap_reduction_m": 9.985,
+    "hausdorff_distance_m": 29.228
+  },
+  "yeokchon_top1": null,
+  "clearly_better_dimensions": [],
+  "case": "CASE C",
+  "final_recommendation": "불광역 3호선 → 불광제1동주민센터를 최종 MVP 후보로 유지 추천"
+}

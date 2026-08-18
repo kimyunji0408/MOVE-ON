@@ -1,0 +1,29 @@
+{
+  "destination": {
+    "facility_id": "mobility_facility-525",
+    "facility_name": "은평장애인주간보호센터",
+    "facility_address": "서울특별시 은평구 진흥로 87",
+    "facility_lon": 126.9217,
+    "facility_lat": 37.6047
+  },
+  "station_names_requested": [
+    "녹번",
+    "불광",
+    "독바위",
+    "연신내",
+    "응암"
+  ],
+  "station_line_route_count": 7,
+  "baseline_overlap_gt_0_count": 0,
+  "baseline_overlap_eq_0_count": 7,
+  "alternative_generated_count": 0,
+  "historical_flood_trace_avoiding_candidate_count": 0,
+  "final_judgement": "센터 목적지 기준으로 baseline 침수흔적 overlap이 확인되지 않았거나, 감소 alternative가 확인되지 않았다.",
+  "note": "flood_overlap_ratio는 침수확률이 아니라 전체 보행경로 중 과거 침수흔적 geometry와 중첩되는 길이 비율이다.",
+  "output_files": [
+    "data\\processed\\final_mvp\\eunpyeong_daycare_routes\\station_to_eunpyeong_daycare_routes.csv",
+    "data\\processed\\final_mvp\\eunpyeong_daycare_routes\\station_to_eunpyeong_daycare_routes.json",
+    "data\\processed\\final_mvp\\eunpyeong_daycare_routes\\station_to_eunpyeong_daycare_routes.geojson",
+    "data\\processed\\final_mvp\\eunpyeong_daycare_routes\\station_to_eunpyeong_daycare_report.json"
+  ]
+}
