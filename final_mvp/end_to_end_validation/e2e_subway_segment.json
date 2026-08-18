@@ -1,0 +1,38 @@
+{
+  "api_success": true,
+  "http_status": 200,
+  "resultCode": "00",
+  "resultMsg": "성공",
+  "source": "data\\raw\\od_candidates\\route_api_cache.json",
+  "origin": {
+    "station": "녹번",
+    "line": "3호선"
+  },
+  "destination": {
+    "station": "불광",
+    "line": "3호선"
+  },
+  "search_type": "duration",
+  "totalDstc": 1100,
+  "totalReqHr_raw": 90,
+  "transfer_count": 0,
+  "transfer_stations": [],
+  "station_sequence": [
+    "녹번",
+    "불광"
+  ],
+  "line_sequence": [
+    "3호선"
+  ],
+  "segments": [
+    {
+      "departure_station": "녹번",
+      "departure_line": "3호선",
+      "arrival_station": "불광",
+      "arrival_line": "3호선",
+      "distance_raw": 1100,
+      "reqHr_raw": 90,
+      "transfer_yn": "N"
+    }
+  ]
+}
