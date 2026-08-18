@@ -1,0 +1,38 @@
+{
+  "ARCHIVE": [
+    "scripts\\archive\\candidate_experiments\\build_targeted_osm_flood_avoidance.py",
+    "scripts\\archive\\candidate_experiments\\build_walking_mvp_candidates.ps1",
+    "scripts\\archive\\candidate_experiments\\check_eunpyeong_daycare_walking_routes.py",
+    "scripts\\archive\\candidate_experiments\\curate_final_mvp_walking_candidate.py",
+    "scripts\\archive\\candidate_experiments\\validate_yeokchon_mvp_candidate.py",
+    "scripts\\archive\\early_validation\\analyze_flood_candidates.py",
+    "scripts\\archive\\early_validation\\validate_pedestrian_routing_possibility.ps1",
+    "scripts\\archive\\route_candidate_experiments\\build_eunpyeong_od_candidates.ps1"
+  ],
+  "PIPELINE_SUPPORT": [
+    "scripts\\build_osm_walking_routing.py",
+    "scripts\\build_route_analysis.py",
+    "scripts\\build_route_flood_unique_exposure.py",
+    "scripts\\prepare_flood_data.py",
+    "scripts\\process_mobility_geojson.ps1",
+    "scripts\\process_subway_data.py",
+    "scripts\\process_weather_data.py",
+    "scripts\\project_cleanup.py"
+  ],
+  "DIAGNOSTIC": [
+    "scripts\\diagnostics\\check_accessibility_api.py",
+    "scripts\\diagnostics\\check_alan_api.py",
+    "scripts\\diagnostics\\check_hsr_api.py",
+    "scripts\\diagnostics\\check_route_api.py",
+    "scripts\\diagnostics\\check_subway_data.py",
+    "scripts\\diagnostics\\check_subway_master.py",
+    "scripts\\diagnostics\\check_weather_api.py"
+  ],
+  "CORE": [
+    "scripts\\run_pipeline.ps1"
+  ],
+  "VALIDATION": [
+    "scripts\\validation\\validate_final_e2e_mvp.py",
+    "scripts\\validation\\validate_mobility_data.ps1"
+  ]
+}

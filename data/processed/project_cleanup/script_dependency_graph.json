@@ -1,0 +1,318 @@
+{
+  "nodes": [
+    {
+      "script": "scripts\\archive\\candidate_experiments\\build_targeted_osm_flood_avoidance.py",
+      "classification": "ARCHIVE",
+      "inputs": [],
+      "outputs": [
+        "data\\processed\\osm_routing",
+        "data\\processed\\osm_routing_targeted"
+      ],
+      "calls": [
+        "build_osm_walking_routing"
+      ]
+    },
+    {
+      "script": "scripts\\archive\\candidate_experiments\\build_walking_mvp_candidates.ps1",
+      "classification": "ARCHIVE",
+      "inputs": [
+        "data\\raw\\subway\\서울교통공사_역주소",
+        "data\\raw\\subway\\서울시"
+      ],
+      "outputs": [
+        "data\\processed\\accessibility\\candidate_station_accessibility.csv",
+        "data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson",
+        "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+        "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+        "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson",
+        "data\\processed\\mobility\\validation_report.json",
+        "data\\processed\\od_candidates\\eunpyeong_od_route_candidates.json",
+        "data\\processed\\walking_mvp_candidates"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\archive\\candidate_experiments\\check_eunpyeong_daycare_walking_routes.py",
+      "classification": "ARCHIVE",
+      "inputs": [],
+      "outputs": [
+        "data\\processed\\final_mvp\\eunpyeong_daycare_routes"
+      ],
+      "calls": [
+        "build_osm_walking_routing",
+        "build_targeted_osm_flood_avoidance"
+      ]
+    },
+    {
+      "script": "scripts\\archive\\candidate_experiments\\curate_final_mvp_walking_candidate.py",
+      "classification": "ARCHIVE",
+      "inputs": [],
+      "outputs": [
+        "data\\processed\\final_mvp",
+        "data\\processed\\osm_routing_targeted"
+      ],
+      "calls": [
+        "build_osm_walking_routing"
+      ]
+    },
+    {
+      "script": "scripts\\archive\\candidate_experiments\\validate_yeokchon_mvp_candidate.py",
+      "classification": "ARCHIVE",
+      "inputs": [
+        "data\\raw\\accessibility"
+      ],
+      "outputs": [
+        "data\\processed\\final_mvp\\yeokchon_validation"
+      ],
+      "calls": [
+        "build_osm_walking_routing",
+        "build_targeted_osm_flood_avoidance"
+      ]
+    },
+    {
+      "script": "scripts\\archive\\early_validation\\analyze_flood_candidates.py",
+      "classification": "ARCHIVE",
+      "inputs": [],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\archive\\early_validation\\validate_pedestrian_routing_possibility.ps1",
+      "classification": "ARCHIVE",
+      "inputs": [
+        "data\\raw\\subway\\서울교통공사_역주소"
+      ],
+      "outputs": [
+        "data\\processed\\accessibility\\candidate_station_accessibility.csv",
+        "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+        "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+        "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson",
+        "data\\processed\\mobility\\validation_report.json",
+        "data\\processed\\routing_validation"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\archive\\route_candidate_experiments\\build_eunpyeong_od_candidates.ps1",
+      "classification": "ARCHIVE",
+      "inputs": [
+        "data\\raw\\od_candidates",
+        "data\\raw\\subway\\서울교통공사_역주소",
+        "data\\raw\\subway\\서울시"
+      ],
+      "outputs": [
+        "data\\processed\\accessibility\\candidate_station_accessibility.csv",
+        "data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson",
+        "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+        "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+        "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson",
+        "data\\processed\\mobility\\validation_report.json",
+        "data\\processed\\od_candidates"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\build_osm_walking_routing.py",
+      "classification": "PIPELINE_SUPPORT",
+      "inputs": [
+        "data\\raw\\osm",
+        "data\\raw\\subway\\서울교통공사_역주소 및 전화번호_20250318.csv",
+        "data\\raw\\subway\\서울시 역사마스터 정보.csv"
+      ],
+      "outputs": [
+        "data\\processed\\accessibility\\candidate_station_accessibility.csv",
+        "data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson",
+        "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+        "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+        "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson",
+        "data\\processed\\mobility\\validation_report.json",
+        "data\\processed\\osm_routing"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\build_route_analysis.py",
+      "classification": "PIPELINE_SUPPORT",
+      "inputs": [],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\build_route_flood_unique_exposure.py",
+      "classification": "PIPELINE_SUPPORT",
+      "inputs": [],
+      "outputs": [],
+      "calls": [
+        "build_route_analysis"
+      ]
+    },
+    {
+      "script": "scripts\\diagnostics\\check_accessibility_api.py",
+      "classification": "DIAGNOSTIC",
+      "inputs": [
+        "data\\raw\\accessibility"
+      ],
+      "outputs": [
+        "data\\processed\\accessibility"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\diagnostics\\check_alan_api.py",
+      "classification": "DIAGNOSTIC",
+      "inputs": [],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\diagnostics\\check_hsr_api.py",
+      "classification": "DIAGNOSTIC",
+      "inputs": [],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\diagnostics\\check_route_api.py",
+      "classification": "DIAGNOSTIC",
+      "inputs": [
+        "data\\raw\\routes"
+      ],
+      "outputs": [
+        "data\\processed\\routes"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\diagnostics\\check_subway_data.py",
+      "classification": "DIAGNOSTIC",
+      "inputs": [
+        "data\\raw\\subway",
+        "data\\raw\\subway 폴더에서 CSV 파일을 찾지 못했습니다."
+      ],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\diagnostics\\check_subway_master.py",
+      "classification": "DIAGNOSTIC",
+      "inputs": [
+        "data\\raw\\subway"
+      ],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\diagnostics\\check_weather_api.py",
+      "classification": "DIAGNOSTIC",
+      "inputs": [
+        "data\\raw\\weather"
+      ],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\prepare_flood_data.py",
+      "classification": "PIPELINE_SUPPORT",
+      "inputs": [],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\process_mobility_geojson.ps1",
+      "classification": "PIPELINE_SUPPORT",
+      "inputs": [
+        "data\\raw\\mobility",
+        "data\\raw\\subway\\서울시"
+      ],
+      "outputs": [
+        "data\\processed\\mobility"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\process_subway_data.py",
+      "classification": "PIPELINE_SUPPORT",
+      "inputs": [
+        "data\\raw\\subway"
+      ],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\process_weather_data.py",
+      "classification": "PIPELINE_SUPPORT",
+      "inputs": [
+        "data\\raw\\weather",
+        "data\\raw\\weather 폴더에서 기상 JSON을 찾지 못했습니다."
+      ],
+      "outputs": [
+        "data\\processed\\weather"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\project_cleanup.py",
+      "classification": "PIPELINE_SUPPORT",
+      "inputs": [
+        "# MOVE:ON\n\nAI 기반 기후재난 대응 교통약자 이동단절 예측 및 맞춤 대체이동 서비스\n\n## MVP scope\n\n보행 -> 지하철 -> 보행 구조의 frozen demo scenario를 검증한다.\n\n## Frozen demo scenario\n\n은평구청 -> 녹번역 3호선 -> 불광역 3호선 -> 불광제1동주민센터\n\n## Validated route\n\nfirst-mile:\n- 은평구청 -> 녹번역 3호선\n- 462.059m\n- historical flood overlap 0.0m\n\nsubway:\n- 녹번 -> 불광\n- 3호선\n- transfer 0\n- totalDstc 1100\n- totalReqHr raw 90\n\nlast-mile baseline:\n- 불광역 3호선 -> 불광제1동주민센터\n- 331.712m\n- historical flood overlap 9.985m\n\nlast-mile alternative:\n- 333.743m\n- +2.031m\n- historical flood overlap 0.0m\n- Hausdorff 29.228m reference, current regenerated value may differ within small geometry tolerance\n\n## Important interpretation\n\n- flood trace != flood probability\n- historical flood avoidance != guaranteed safety\n- elevator\\lift = facility existence only\n- real-time operation not validated\n- OSM accessibility tags are not used for safety judgment\n- slope is not used for safety judgment\n- totalReqHr unit is not verified\n\n## Data\n\n- OSM walk graph: `data\\raw\\osm\\eunpyeong_walk.graphml`\n- Flood traces: `data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson`\n- Accessibility: `data\\processed\\accessibility\\candidate_station_accessibility.csv`\n- Subway route cache: `data\\raw\\od_candidates\\route_api_cache.json`\n- Frozen validation: `data\\processed\\final_mvp\\end_to_end_validation\\`\n- Frozen scenario: `data\\processed\\final_mvp\\final_mvp_scenario.json`\n\n## Scripts structure\n\n- `scripts\\run_pipeline.ps1`: final frozen MVP smoke validation wrapper\n- `scripts\\validation\\`: final scenario validation scripts\n- `scripts\\diagnostics\\`: API and source-data check scripts\n- `scripts\\archive\\`: candidate-search and early validation experiments kept for reproducibility\n- `scripts\\*.py` and `scripts\\*.ps1`: preprocessing and shared pipeline support retained at top level where existing imports rely on them\n\n## Execution\n\n```powershell\npwsh -ExecutionPolicy Bypass -File scripts\\run_pipeline.ps1\n```\n\nThe wrapper validates the frozen scenario and reloads the cleanup report. It does not rerun broad OD search.\n\n## Implemented\n\n- Flood trace preprocessing\n- Subway station\\accessibility data checks\n- Route API cache validation for the frozen subway segment\n- Local OSM walking route validation\n- Frozen end-to-end MVP scenario validation\n- Script inventory and cleanup reports\n\n## Not implemented yet\n\n- historical heavy-rain time-series demo dataset\n- rule-based route decision\n- Risk Score 또는 동등한 위험상태 판단\n- Mobility Failure Point\n- Last Accessible Departure\n- Alan explanation\n- final UI integration\n",
+        "data\\raw",
+        "data\\raw\\flood + data\\raw\\subway + data\\raw\\accessibility + data\\raw\\mobility",
+        "data\\raw\\osm\\eunpyeong_walk.graphml"
+      ],
+      "outputs": [
+        "# MOVE:ON\n\nAI 기반 기후재난 대응 교통약자 이동단절 예측 및 맞춤 대체이동 서비스\n\n## MVP scope\n\n보행 -> 지하철 -> 보행 구조의 frozen demo scenario를 검증한다.\n\n## Frozen demo scenario\n\n은평구청 -> 녹번역 3호선 -> 불광역 3호선 -> 불광제1동주민센터\n\n## Validated route\n\nfirst-mile:\n- 은평구청 -> 녹번역 3호선\n- 462.059m\n- historical flood overlap 0.0m\n\nsubway:\n- 녹번 -> 불광\n- 3호선\n- transfer 0\n- totalDstc 1100\n- totalReqHr raw 90\n\nlast-mile baseline:\n- 불광역 3호선 -> 불광제1동주민센터\n- 331.712m\n- historical flood overlap 9.985m\n\nlast-mile alternative:\n- 333.743m\n- +2.031m\n- historical flood overlap 0.0m\n- Hausdorff 29.228m reference, current regenerated value may differ within small geometry tolerance\n\n## Important interpretation\n\n- flood trace != flood probability\n- historical flood avoidance != guaranteed safety\n- elevator\\lift = facility existence only\n- real-time operation not validated\n- OSM accessibility tags are not used for safety judgment\n- slope is not used for safety judgment\n- totalReqHr unit is not verified\n\n## Data\n\n- OSM walk graph: `data\\raw\\osm\\eunpyeong_walk.graphml`\n- Flood traces: `data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson`\n- Accessibility: `data\\processed\\accessibility\\candidate_station_accessibility.csv`\n- Subway route cache: `data\\raw\\od_candidates\\route_api_cache.json`\n- Frozen validation: `data\\processed\\final_mvp\\end_to_end_validation\\`\n- Frozen scenario: `data\\processed\\final_mvp\\final_mvp_scenario.json`\n\n## Scripts structure\n\n- `scripts\\run_pipeline.ps1`: final frozen MVP smoke validation wrapper\n- `scripts\\validation\\`: final scenario validation scripts\n- `scripts\\diagnostics\\`: API and source-data check scripts\n- `scripts\\archive\\`: candidate-search and early validation experiments kept for reproducibility\n- `scripts\\*.py` and `scripts\\*.ps1`: preprocessing and shared pipeline support retained at top level where existing imports rely on them\n\n## Execution\n\n```powershell\npwsh -ExecutionPolicy Bypass -File scripts\\run_pipeline.ps1\n```\n\nThe wrapper validates the frozen scenario and reloads the cleanup report. It does not rerun broad OD search.\n\n## Implemented\n\n- Flood trace preprocessing\n- Subway station\\accessibility data checks\n- Route API cache validation for the frozen subway segment\n- Local OSM walking route validation\n- Frozen end-to-end MVP scenario validation\n- Script inventory and cleanup reports\n\n## Not implemented yet\n\n- historical heavy-rain time-series demo dataset\n- rule-based route decision\n- Risk Score 또는 동등한 위험상태 판단\n- Mobility Failure Point\n- Last Accessible Departure\n- Alan explanation\n- final UI integration\n",
+        "data\\processed",
+        "data\\processed\\final_mvp",
+        "data\\processed\\final_mvp\\end_to_end_validation\\e2e_full_journey.geojson",
+        "data\\processed\\final_mvp\\end_to_end_validation\\e2e_full_journey.json",
+        "data\\processed\\final_mvp\\end_to_end_validation\\e2e_validation_report.json",
+        "data\\processed\\final_mvp\\final_mvp_scenario.json",
+        "data\\processed\\project_cleanup",
+        "then inspect data\\processed\\final_mvp\\final_mvp_scenario.json"
+      ],
+      "calls": []
+    },
+    {
+      "script": "scripts\\run_pipeline.ps1",
+      "classification": "CORE",
+      "inputs": [],
+      "outputs": [],
+      "calls": []
+    },
+    {
+      "script": "scripts\\validation\\validate_final_e2e_mvp.py",
+      "classification": "VALIDATION",
+      "inputs": [
+        "data\\raw\\od_candidates\\route_api_cache.json"
+      ],
+      "outputs": [
+        "data\\processed\\final_mvp\\end_to_end_validation",
+        "data\\processed\\final_mvp\\yeokchon_validation"
+      ],
+      "calls": [
+        "build_osm_walking_routing"
+      ]
+    },
+    {
+      "script": "scripts\\validation\\validate_mobility_data.ps1",
+      "classification": "VALIDATION",
+      "inputs": [
+        "data\\raw\\mobility",
+        "data\\raw\\subway\\서울시"
+      ],
+      "outputs": [
+        "data\\processed\\mobility"
+      ],
+      "calls": []
+    }
+  ],
+  "final_frozen_scenario_dependency_chain": [
+    "data\\raw\\flood + data\\raw\\subway + data\\raw\\accessibility + data\\raw\\mobility",
+    "scripts\\prepare_flood_data.py / scripts\\process_subway_data.py / scripts\\process_mobility_geojson.ps1",
+    "data\\raw\\osm\\eunpyeong_walk.graphml",
+    "scripts\\build_osm_walking_routing.py",
+    "data\\processed\\final_mvp\\end_to_end_validation\\e2e_validation_report.json",
+    "scripts\\validation\\validate_final_e2e_mvp.py",
+    "data\\processed\\final_mvp\\final_mvp_scenario.json"
+  ]
+}

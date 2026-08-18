@@ -1,0 +1,767 @@
+[
+  {
+    "filename": "scripts\\archive\\candidate_experiments\\build_targeted_osm_flood_avoidance.py",
+    "language": "Python",
+    "purpose": "최종 후보 선정 전 실험/검증 과정 보존",
+    "inputs": [],
+    "outputs": [
+      "data\\processed\\osm_routing",
+      "data\\processed\\osm_routing_targeted"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "build_osm_walking_routing",
+      "geopandas",
+      "itertools",
+      "json",
+      "networkx",
+      "osmnx",
+      "pandas",
+      "pathlib"
+    ],
+    "called_by": [
+      "scripts\\archive\\candidate_experiments\\check_eunpyeong_daycare_walking_routes.py",
+      "scripts\\archive\\candidate_experiments\\validate_yeokchon_mvp_candidate.py"
+    ],
+    "calls": [
+      "build_osm_walking_routing"
+    ],
+    "final_mvp_dependency": false,
+    "reproducibility_value": true,
+    "superseded": true,
+    "duplicate_logic": "후보 탐색/검증 계열은 OSM routing, flood intersection 로직 일부를 중복 보유",
+    "recommended_classification": "ARCHIVE"
+  },
+  {
+    "filename": "scripts\\archive\\candidate_experiments\\build_walking_mvp_candidates.ps1",
+    "language": "PowerShell",
+    "purpose": "최종 후보 선정 전 실험/검증 과정 보존",
+    "inputs": [
+      "data\\raw\\subway\\서울교통공사_역주소",
+      "data\\raw\\subway\\서울시"
+    ],
+    "outputs": [
+      "data\\processed\\accessibility\\candidate_station_accessibility.csv",
+      "data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson",
+      "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+      "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+      "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson",
+      "data\\processed\\mobility\\validation_report.json",
+      "data\\processed\\od_candidates\\eunpyeong_od_route_candidates.json",
+      "data\\processed\\walking_mvp_candidates"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": true,
+    "superseded": true,
+    "duplicate_logic": "후보 탐색/검증 계열은 OSM routing, flood intersection 로직 일부를 중복 보유",
+    "recommended_classification": "ARCHIVE"
+  },
+  {
+    "filename": "scripts\\archive\\candidate_experiments\\check_eunpyeong_daycare_walking_routes.py",
+    "language": "Python",
+    "purpose": "외부 API 또는 원천 데이터 연결/스키마 진단",
+    "inputs": [],
+    "outputs": [
+      "data\\processed\\final_mvp\\eunpyeong_daycare_routes"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "build_osm_walking_routing",
+      "build_targeted_osm_flood_avoidance",
+      "geopandas",
+      "itertools",
+      "json",
+      "networkx",
+      "osmnx",
+      "pandas",
+      "pathlib"
+    ],
+    "called_by": [],
+    "calls": [
+      "build_osm_walking_routing",
+      "build_targeted_osm_flood_avoidance"
+    ],
+    "final_mvp_dependency": false,
+    "reproducibility_value": true,
+    "superseded": true,
+    "duplicate_logic": "후보 탐색/검증 계열은 OSM routing, flood intersection 로직 일부를 중복 보유",
+    "recommended_classification": "ARCHIVE"
+  },
+  {
+    "filename": "scripts\\archive\\candidate_experiments\\curate_final_mvp_walking_candidate.py",
+    "language": "Python",
+    "purpose": "최종 후보 선정 전 실험/검증 과정 보존",
+    "inputs": [],
+    "outputs": [
+      "data\\processed\\final_mvp",
+      "data\\processed\\osm_routing_targeted"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "build_osm_walking_routing",
+      "geopandas",
+      "json",
+      "osmnx",
+      "pandas",
+      "pathlib"
+    ],
+    "called_by": [],
+    "calls": [
+      "build_osm_walking_routing"
+    ],
+    "final_mvp_dependency": false,
+    "reproducibility_value": true,
+    "superseded": true,
+    "duplicate_logic": "후보 탐색/검증 계열은 OSM routing, flood intersection 로직 일부를 중복 보유",
+    "recommended_classification": "ARCHIVE"
+  },
+  {
+    "filename": "scripts\\archive\\candidate_experiments\\validate_yeokchon_mvp_candidate.py",
+    "language": "Python",
+    "purpose": "최종 후보 선정 전 실험/검증 과정 보존",
+    "inputs": [
+      "data\\raw\\accessibility"
+    ],
+    "outputs": [
+      "data\\processed\\final_mvp\\yeokchon_validation"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "build_osm_walking_routing",
+      "build_targeted_osm_flood_avoidance",
+      "geopandas",
+      "itertools",
+      "json",
+      "networkx",
+      "osmnx",
+      "pandas",
+      "pathlib",
+      "shapely.geometry"
+    ],
+    "called_by": [],
+    "calls": [
+      "build_osm_walking_routing",
+      "build_targeted_osm_flood_avoidance"
+    ],
+    "final_mvp_dependency": false,
+    "reproducibility_value": true,
+    "superseded": true,
+    "duplicate_logic": "후보 탐색/검증 계열은 OSM routing, flood intersection 로직 일부를 중복 보유",
+    "recommended_classification": "ARCHIVE"
+  },
+  {
+    "filename": "scripts\\archive\\early_validation\\analyze_flood_candidates.py",
+    "language": "Python",
+    "purpose": "최종 후보 선정 전 실험/검증 과정 보존",
+    "inputs": [],
+    "outputs": [],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "geopandas",
+      "pandas",
+      "pathlib",
+      "shapely.geometry"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": true,
+    "superseded": true,
+    "duplicate_logic": "후보 탐색/검증 계열은 OSM routing, flood intersection 로직 일부를 중복 보유",
+    "recommended_classification": "ARCHIVE"
+  },
+  {
+    "filename": "scripts\\archive\\early_validation\\validate_pedestrian_routing_possibility.ps1",
+    "language": "PowerShell",
+    "purpose": "최종 후보 선정 전 실험/검증 과정 보존",
+    "inputs": [
+      "data\\raw\\subway\\서울교통공사_역주소"
+    ],
+    "outputs": [
+      "data\\processed\\accessibility\\candidate_station_accessibility.csv",
+      "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+      "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+      "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson",
+      "data\\processed\\mobility\\validation_report.json",
+      "data\\processed\\routing_validation"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": true,
+    "superseded": true,
+    "duplicate_logic": "후보 탐색/검증 계열은 OSM routing, flood intersection 로직 일부를 중복 보유",
+    "recommended_classification": "ARCHIVE"
+  },
+  {
+    "filename": "scripts\\archive\\route_candidate_experiments\\build_eunpyeong_od_candidates.ps1",
+    "language": "PowerShell",
+    "purpose": "최종 후보 선정 전 실험/검증 과정 보존",
+    "inputs": [
+      "data\\raw\\od_candidates",
+      "data\\raw\\subway\\서울교통공사_역주소",
+      "data\\raw\\subway\\서울시"
+    ],
+    "outputs": [
+      "data\\processed\\accessibility\\candidate_station_accessibility.csv",
+      "data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson",
+      "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+      "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+      "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson",
+      "data\\processed\\mobility\\validation_report.json",
+      "data\\processed\\od_candidates"
+    ],
+    "api_usage": [
+      "ROUTE_API_KEY",
+      "apis.data.go.kr"
+    ],
+    "environment_variables": [],
+    "imports": [],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": true,
+    "superseded": true,
+    "duplicate_logic": "후보 탐색/검증 계열은 OSM routing, flood intersection 로직 일부를 중복 보유",
+    "recommended_classification": "ARCHIVE"
+  },
+  {
+    "filename": "scripts\\build_osm_walking_routing.py",
+    "language": "Python",
+    "purpose": "OSM 보행망 구축/검증 및 보행경로 분석 공통 로직",
+    "inputs": [
+      "data\\raw\\osm",
+      "data\\raw\\subway\\서울교통공사_역주소 및 전화번호_20250318.csv",
+      "data\\raw\\subway\\서울시 역사마스터 정보.csv"
+    ],
+    "outputs": [
+      "data\\processed\\accessibility\\candidate_station_accessibility.csv",
+      "data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson",
+      "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+      "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+      "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson",
+      "data\\processed\\mobility\\validation_report.json",
+      "data\\processed\\osm_routing"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "geopandas",
+      "itertools",
+      "json",
+      "networkx",
+      "osmnx",
+      "pandas",
+      "pathlib",
+      "shapely.geometry"
+    ],
+    "called_by": [
+      "scripts\\archive\\candidate_experiments\\build_targeted_osm_flood_avoidance.py",
+      "scripts\\archive\\candidate_experiments\\check_eunpyeong_daycare_walking_routes.py",
+      "scripts\\archive\\candidate_experiments\\curate_final_mvp_walking_candidate.py",
+      "scripts\\archive\\candidate_experiments\\validate_yeokchon_mvp_candidate.py",
+      "scripts\\validation\\validate_final_e2e_mvp.py"
+    ],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "PIPELINE_SUPPORT"
+  },
+  {
+    "filename": "scripts\\build_route_analysis.py",
+    "language": "Python",
+    "purpose": "지하철 경로와 침수/접근성 결합 데이터 생성",
+    "inputs": [],
+    "outputs": [],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "geopandas",
+      "json",
+      "pandas",
+      "pathlib",
+      "re",
+      "shapely.geometry",
+      "typing"
+    ],
+    "called_by": [
+      "scripts\\build_route_flood_unique_exposure.py"
+    ],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "PIPELINE_SUPPORT"
+  },
+  {
+    "filename": "scripts\\build_route_flood_unique_exposure.py",
+    "language": "Python",
+    "purpose": "지하철 경로와 침수/접근성 결합 데이터 생성",
+    "inputs": [],
+    "outputs": [],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "build_route_analysis",
+      "geopandas",
+      "json",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "called_by": [],
+    "calls": [
+      "build_route_analysis"
+    ],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "PIPELINE_SUPPORT"
+  },
+  {
+    "filename": "scripts\\diagnostics\\check_accessibility_api.py",
+    "language": "Python",
+    "purpose": "외부 API 또는 원천 데이터 연결/스키마 진단",
+    "inputs": [
+      "data\\raw\\accessibility"
+    ],
+    "outputs": [
+      "data\\processed\\accessibility"
+    ],
+    "api_usage": [
+      "ACCESSIBILITY_API_KEY",
+      "apis.data.go.kr",
+      "requests"
+    ],
+    "environment_variables": [],
+    "imports": [
+      "csv",
+      "datetime",
+      "json",
+      "os",
+      "pathlib",
+      "requests",
+      "sys",
+      "typing",
+      "urllib.parse",
+      "xml.etree"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": false,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "DIAGNOSTIC"
+  },
+  {
+    "filename": "scripts\\diagnostics\\check_alan_api.py",
+    "language": "Python",
+    "purpose": "외부 API 또는 원천 데이터 연결/스키마 진단",
+    "inputs": [],
+    "outputs": [],
+    "api_usage": [
+      "ALAN_API_KEY",
+      "requests"
+    ],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "json",
+      "os",
+      "pathlib",
+      "requests",
+      "typing"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": false,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "DIAGNOSTIC"
+  },
+  {
+    "filename": "scripts\\diagnostics\\check_hsr_api.py",
+    "language": "Python",
+    "purpose": "외부 API 또는 원천 데이터 연결/스키마 진단",
+    "inputs": [],
+    "outputs": [],
+    "api_usage": [
+      "apihub.kma.go.kr",
+      "requests"
+    ],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "datetime",
+      "dotenv",
+      "os",
+      "pathlib",
+      "re",
+      "requests",
+      "zoneinfo"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": false,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "DIAGNOSTIC"
+  },
+  {
+    "filename": "scripts\\diagnostics\\check_route_api.py",
+    "language": "Python",
+    "purpose": "외부 API 또는 원천 데이터 연결/스키마 진단",
+    "inputs": [
+      "data\\raw\\routes"
+    ],
+    "outputs": [
+      "data\\processed\\routes"
+    ],
+    "api_usage": [
+      "ROUTE_API_KEY",
+      "apis.data.go.kr",
+      "requests"
+    ],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "datetime",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "requests",
+      "sys",
+      "typing",
+      "urllib.parse",
+      "xml.etree",
+      "zoneinfo"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": false,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "DIAGNOSTIC"
+  },
+  {
+    "filename": "scripts\\diagnostics\\check_subway_data.py",
+    "language": "Python",
+    "purpose": "외부 API 또는 원천 데이터 연결/스키마 진단",
+    "inputs": [
+      "data\\raw\\subway",
+      "data\\raw\\subway 폴더에서 CSV 파일을 찾지 못했습니다."
+    ],
+    "outputs": [],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "pandas",
+      "pathlib"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": false,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "DIAGNOSTIC"
+  },
+  {
+    "filename": "scripts\\diagnostics\\check_subway_master.py",
+    "language": "Python",
+    "purpose": "외부 API 또는 원천 데이터 연결/스키마 진단",
+    "inputs": [
+      "data\\raw\\subway"
+    ],
+    "outputs": [],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "pandas",
+      "pathlib"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": false,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "DIAGNOSTIC"
+  },
+  {
+    "filename": "scripts\\diagnostics\\check_weather_api.py",
+    "language": "Python",
+    "purpose": "외부 API 또는 원천 데이터 연결/스키마 진단",
+    "inputs": [
+      "data\\raw\\weather"
+    ],
+    "outputs": [],
+    "api_usage": [
+      "apis.data.go.kr",
+      "requests"
+    ],
+    "environment_variables": [
+      "KMA_API_KEY"
+    ],
+    "imports": [
+      "datetime",
+      "dotenv",
+      "json",
+      "os",
+      "pathlib",
+      "requests",
+      "urllib.parse"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": false,
+    "reproducibility_value": false,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "DIAGNOSTIC"
+  },
+  {
+    "filename": "scripts\\prepare_flood_data.py",
+    "language": "Python",
+    "purpose": "원천 데이터 전처리",
+    "inputs": [],
+    "outputs": [],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "geopandas",
+      "pandas",
+      "pathlib"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "PIPELINE_SUPPORT"
+  },
+  {
+    "filename": "scripts\\process_mobility_geojson.ps1",
+    "language": "PowerShell",
+    "purpose": "원천 데이터 전처리",
+    "inputs": [
+      "data\\raw\\mobility",
+      "data\\raw\\subway\\서울시"
+    ],
+    "outputs": [
+      "data\\processed\\mobility"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "PIPELINE_SUPPORT"
+  },
+  {
+    "filename": "scripts\\process_subway_data.py",
+    "language": "Python",
+    "purpose": "원천 데이터 전처리",
+    "inputs": [
+      "data\\raw\\subway"
+    ],
+    "outputs": [],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "pandas",
+      "pathlib"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "PIPELINE_SUPPORT"
+  },
+  {
+    "filename": "scripts\\process_weather_data.py",
+    "language": "Python",
+    "purpose": "원천 데이터 전처리",
+    "inputs": [
+      "data\\raw\\weather",
+      "data\\raw\\weather 폴더에서 기상 JSON을 찾지 못했습니다."
+    ],
+    "outputs": [
+      "data\\processed\\weather"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "collections",
+      "datetime",
+      "json",
+      "pathlib",
+      "zoneinfo"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "PIPELINE_SUPPORT"
+  },
+  {
+    "filename": "scripts\\project_cleanup.py",
+    "language": "Python",
+    "purpose": "최종 시나리오 동결, cleanup inventory/report 생성",
+    "inputs": [
+      "# MOVE:ON\n\nAI 기반 기후재난 대응 교통약자 이동단절 예측 및 맞춤 대체이동 서비스\n\n## MVP scope\n\n보행 -> 지하철 -> 보행 구조의 frozen demo scenario를 검증한다.\n\n## Frozen demo scenario\n\n은평구청 -> 녹번역 3호선 -> 불광역 3호선 -> 불광제1동주민센터\n\n## Validated route\n\nfirst-mile:\n- 은평구청 -> 녹번역 3호선\n- 462.059m\n- historical flood overlap 0.0m\n\nsubway:\n- 녹번 -> 불광\n- 3호선\n- transfer 0\n- totalDstc 1100\n- totalReqHr raw 90\n\nlast-mile baseline:\n- 불광역 3호선 -> 불광제1동주민센터\n- 331.712m\n- historical flood overlap 9.985m\n\nlast-mile alternative:\n- 333.743m\n- +2.031m\n- historical flood overlap 0.0m\n- Hausdorff 29.228m reference, current regenerated value may differ within small geometry tolerance\n\n## Important interpretation\n\n- flood trace != flood probability\n- historical flood avoidance != guaranteed safety\n- elevator\\lift = facility existence only\n- real-time operation not validated\n- OSM accessibility tags are not used for safety judgment\n- slope is not used for safety judgment\n- totalReqHr unit is not verified\n\n## Data\n\n- OSM walk graph: `data\\raw\\osm\\eunpyeong_walk.graphml`\n- Flood traces: `data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson`\n- Accessibility: `data\\processed\\accessibility\\candidate_station_accessibility.csv`\n- Subway route cache: `data\\raw\\od_candidates\\route_api_cache.json`\n- Frozen validation: `data\\processed\\final_mvp\\end_to_end_validation\\`\n- Frozen scenario: `data\\processed\\final_mvp\\final_mvp_scenario.json`\n\n## Scripts structure\n\n- `scripts\\run_pipeline.ps1`: final frozen MVP smoke validation wrapper\n- `scripts\\validation\\`: final scenario validation scripts\n- `scripts\\diagnostics\\`: API and source-data check scripts\n- `scripts\\archive\\`: candidate-search and early validation experiments kept for reproducibility\n- `scripts\\*.py` and `scripts\\*.ps1`: preprocessing and shared pipeline support retained at top level where existing imports rely on them\n\n## Execution\n\n```powershell\npwsh -ExecutionPolicy Bypass -File scripts\\run_pipeline.ps1\n```\n\nThe wrapper validates the frozen scenario and reloads the cleanup report. It does not rerun broad OD search.\n\n## Implemented\n\n- Flood trace preprocessing\n- Subway station\\accessibility data checks\n- Route API cache validation for the frozen subway segment\n- Local OSM walking route validation\n- Frozen end-to-end MVP scenario validation\n- Script inventory and cleanup reports\n\n## Not implemented yet\n\n- historical heavy-rain time-series demo dataset\n- rule-based route decision\n- Risk Score 또는 동등한 위험상태 판단\n- Mobility Failure Point\n- Last Accessible Departure\n- Alan explanation\n- final UI integration\n",
+      "data\\raw",
+      "data\\raw\\flood + data\\raw\\subway + data\\raw\\accessibility + data\\raw\\mobility",
+      "data\\raw\\osm\\eunpyeong_walk.graphml"
+    ],
+    "outputs": [
+      "# MOVE:ON\n\nAI 기반 기후재난 대응 교통약자 이동단절 예측 및 맞춤 대체이동 서비스\n\n## MVP scope\n\n보행 -> 지하철 -> 보행 구조의 frozen demo scenario를 검증한다.\n\n## Frozen demo scenario\n\n은평구청 -> 녹번역 3호선 -> 불광역 3호선 -> 불광제1동주민센터\n\n## Validated route\n\nfirst-mile:\n- 은평구청 -> 녹번역 3호선\n- 462.059m\n- historical flood overlap 0.0m\n\nsubway:\n- 녹번 -> 불광\n- 3호선\n- transfer 0\n- totalDstc 1100\n- totalReqHr raw 90\n\nlast-mile baseline:\n- 불광역 3호선 -> 불광제1동주민센터\n- 331.712m\n- historical flood overlap 9.985m\n\nlast-mile alternative:\n- 333.743m\n- +2.031m\n- historical flood overlap 0.0m\n- Hausdorff 29.228m reference, current regenerated value may differ within small geometry tolerance\n\n## Important interpretation\n\n- flood trace != flood probability\n- historical flood avoidance != guaranteed safety\n- elevator\\lift = facility existence only\n- real-time operation not validated\n- OSM accessibility tags are not used for safety judgment\n- slope is not used for safety judgment\n- totalReqHr unit is not verified\n\n## Data\n\n- OSM walk graph: `data\\raw\\osm\\eunpyeong_walk.graphml`\n- Flood traces: `data\\processed\\flood\\seoul_flood_trace_2022_2025.geojson`\n- Accessibility: `data\\processed\\accessibility\\candidate_station_accessibility.csv`\n- Subway route cache: `data\\raw\\od_candidates\\route_api_cache.json`\n- Frozen validation: `data\\processed\\final_mvp\\end_to_end_validation\\`\n- Frozen scenario: `data\\processed\\final_mvp\\final_mvp_scenario.json`\n\n## Scripts structure\n\n- `scripts\\run_pipeline.ps1`: final frozen MVP smoke validation wrapper\n- `scripts\\validation\\`: final scenario validation scripts\n- `scripts\\diagnostics\\`: API and source-data check scripts\n- `scripts\\archive\\`: candidate-search and early validation experiments kept for reproducibility\n- `scripts\\*.py` and `scripts\\*.ps1`: preprocessing and shared pipeline support retained at top level where existing imports rely on them\n\n## Execution\n\n```powershell\npwsh -ExecutionPolicy Bypass -File scripts\\run_pipeline.ps1\n```\n\nThe wrapper validates the frozen scenario and reloads the cleanup report. It does not rerun broad OD search.\n\n## Implemented\n\n- Flood trace preprocessing\n- Subway station\\accessibility data checks\n- Route API cache validation for the frozen subway segment\n- Local OSM walking route validation\n- Frozen end-to-end MVP scenario validation\n- Script inventory and cleanup reports\n\n## Not implemented yet\n\n- historical heavy-rain time-series demo dataset\n- rule-based route decision\n- Risk Score 또는 동등한 위험상태 판단\n- Mobility Failure Point\n- Last Accessible Departure\n- Alan explanation\n- final UI integration\n",
+      "data\\processed",
+      "data\\processed\\final_mvp",
+      "data\\processed\\final_mvp\\end_to_end_validation\\e2e_full_journey.geojson",
+      "data\\processed\\final_mvp\\end_to_end_validation\\e2e_full_journey.json",
+      "data\\processed\\final_mvp\\end_to_end_validation\\e2e_validation_report.json",
+      "data\\processed\\final_mvp\\final_mvp_scenario.json",
+      "data\\processed\\project_cleanup",
+      "then inspect data\\processed\\final_mvp\\final_mvp_scenario.json"
+    ],
+    "api_usage": [
+      "ACCESSIBILITY_API_KEY",
+      "ALAN_API_KEY",
+      "ROUTE_API_KEY",
+      "apihub.kma.go.kr",
+      "apis.data.go.kr",
+      "requests"
+    ],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "ast",
+      "json",
+      "pathlib",
+      "re"
+    ],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "PIPELINE_SUPPORT"
+  },
+  {
+    "filename": "scripts\\run_pipeline.ps1",
+    "language": "PowerShell",
+    "purpose": "최종 frozen MVP 검증 wrapper",
+    "inputs": [],
+    "outputs": [],
+    "api_usage": [],
+    "environment_variables": [
+      "USERPROFILE"
+    ],
+    "imports": [],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "CORE"
+  },
+  {
+    "filename": "scripts\\validation\\validate_final_e2e_mvp.py",
+    "language": "Python",
+    "purpose": "최종 end-to-end MVP 시나리오 검증 및 산출물 생성",
+    "inputs": [
+      "data\\raw\\od_candidates\\route_api_cache.json"
+    ],
+    "outputs": [
+      "data\\processed\\final_mvp\\end_to_end_validation",
+      "data\\processed\\final_mvp\\yeokchon_validation"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [
+      "__future__",
+      "build_osm_walking_routing",
+      "geopandas",
+      "itertools",
+      "json",
+      "networkx",
+      "osmnx",
+      "pandas",
+      "pathlib",
+      "shapely.geometry",
+      "sys"
+    ],
+    "called_by": [],
+    "calls": [
+      "build_osm_walking_routing"
+    ],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "VALIDATION"
+  },
+  {
+    "filename": "scripts\\validation\\validate_mobility_data.ps1",
+    "language": "PowerShell",
+    "purpose": "역할 확인 필요",
+    "inputs": [
+      "data\\raw\\mobility",
+      "data\\raw\\subway\\서울시"
+    ],
+    "outputs": [
+      "data\\processed\\mobility"
+    ],
+    "api_usage": [],
+    "environment_variables": [],
+    "imports": [],
+    "called_by": [],
+    "calls": [],
+    "final_mvp_dependency": true,
+    "reproducibility_value": true,
+    "superseded": false,
+    "duplicate_logic": "",
+    "recommended_classification": "VALIDATION"
+  }
+]

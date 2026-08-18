@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-08-18 19:49:48",
+  "case": "CASE_A",
+  "final_judgement": "침수흔적 중첩 감소 경로가 발견되어 설명력 높은 MVP 후보를 추천할 수 있다.",
+  "existing_80_sample_diagnosis": {
+    "baseline_total": 80,
+    "baseline_overlap_gt_0_count": 2,
+    "baseline_overlap_eq_0_count": 78,
+    "baseline_flood_feature_count_gt_0_count": 2,
+    "top10": [
+      {
+        "od_id": "od_433",
+        "station": "독바위",
+        "station_line": "6호선",
+        "facility_name": "유호루하스공인중개사사무소",
+        "route_length_m": 1912.794,
+        "flood_overlap_length_m_total": 3.816,
+        "flood_overlap_ratio": 0.001995,
+        "flood_feature_count_unique_total": 2
+      },
+      {
+        "od_id": "od_588",
+        "station": "독바위",
+        "station_line": "6호선",
+        "facility_name": "빗물받이",
+        "route_length_m": 1912.794,
+        "flood_overlap_length_m_total": 3.816,
+        "flood_overlap_ratio": 0.001995,
+        "flood_feature_count_unique_total": 2
+      }
+    ],
+    "diagnosis": "기존 80개 샘플 중 flood overlap > 0 baseline이 적어 침수노출 경로를 충분히 포함하지 않았다."
+  },
+  "baseline_sweep": {
+    "candidate_od_total": 3055,
+    "routing_success": 3037,
+    "routing_failure": 18,
+    "flood_overlap_gt_0_od_count": 115,
+    "flood_overlap_gt_0_ratio": 0.037866,
+    "top10": [
+      {
+        "od_id": "od_2326",
+        "station": "불광",
+        "station_line": "3호선",
+        "facility_name": "바르티매오공동생활가정",
+        "route_length_m": 853.368,
+        "flood_overlap_length_m_total": 74.769,
+        "flood_overlap_ratio": 0.087617,
+        "flood_feature_count_unique_total": 5
+      },
+      {
+        "od_id": "od_937",
+        "station": "불광",
+        "station_line": "6호선",
+        "facility_name": "바르티매오공동생활가정",
+        "route_length_m": 853.368,
+        "flood_overlap_length_m_total": 74.769,
+        "flood_overlap_ratio": 0.087617,
+        "flood_feature_count_unique_total": 5
+      },
+      {
+        "od_id": "od_2803",
+        "station": "연신내",
+        "station_line": "3호선",
+        "facility_name": "바르티매오공동생활가정",
+        "route_length_m": 1543.385,
+        "flood_overlap_length_m_total": 74.769,
+        "flood_overlap_ratio": 0.048445,
+        "flood_feature_count_unique_total": 5
+      },
+      {
+        "od_id": "od_158",
+        "station": "연신내",
+        "station_line": "6호선",
+        "facility_name": "바르티매오공동생활가정",
+        "route_length_m": 1557.661,
+        "flood_overlap_length_m_total": 74.769,
+        "flood_overlap_ratio": 0.048001,
+        "flood_feature_count_unique_total": 5
+      },
+      {
+        "od_id": "od_2838",
+        "station": "연신내",
+        "station_line": "3호선",
+        "facility_name": "빗물받이",
+        "route_length_m": 1145.926,
+        "flood_overlap_length_m_total": 23.346,
+        "flood_overlap_ratio": 0.020373,
+        "flood_feature_count_unique_total": 3
+      },
+      {
+        "od_id": "od_2825",
+        "station": "연신내",
+        "station_line": "3호선",
+        "facility_name": "빗물받이",
+        "route_length_m": 1145.926,
+        "flood_overlap_length_m_total": 23.346,
+        "flood_overlap_ratio": 0.020373,
+        "flood_feature_count_unique_total": 3
+      },
+      {
+        "od_id": "od_2851",
+        "station": "연신내",
+        "station_line": "3호선",
+        "facility_name": "빗물받이",
+        "route_length_m": 1145.926,
+        "flood_overlap_length_m_total": 23.346,
+        "flood_overlap_ratio": 0.020373,
+        "flood_feature_count_unique_total": 3
+      },
+      {
+        "od_id": "od_2822",
+        "station": "연신내",
+        "station_line": "3호선",
+        "facility_name": "빗물받이",
+        "route_length_m": 1145.926,
+        "flood_overlap_length_m_total": 23.346,
+        "flood_overlap_ratio": 0.020373,
+        "flood_feature_count_unique_total": 3
+      },
+      {
+        "od_id": "od_3057",
+        "station": "연신내",
+        "station_line": "3호선",
+        "facility_name": "빗물받이",
+        "route_length_m": 1145.926,
+        "flood_overlap_length_m_total": 23.346,
+        "flood_overlap_ratio": 0.020373,
+        "flood_feature_count_unique_total": 3
+      },
+      {
+        "od_id": "od_194",
+        "station": "연신내",
+        "station_line": "6호선",
+        "facility_name": "빗물받이",
+        "route_length_m": 1160.202,
+        "flood_overlap_length_m_total": 23.346,
+        "flood_overlap_ratio": 0.020122,
+        "flood_feature_count_unique_total": 3
+      }
+    ]
+  },
+  "avoidance_search": {
+    "analyzed_flood_exposed_od_count": 100,
+    "k_shortest_reduction_candidate_count": 129,
+    "flood_edge_exclusion_route_exists_od_count": 80,
+    "actual_overlap_reduction_candidate_count": 207,
+    "max_overlap_reduction_m": 23.346
+  },
+  "limits": [
+    "flood_overlap_ratio는 침수확률이 아니라 전체 보행경로 중 과거 침수흔적 geometry와 공간적으로 중첩되는 길이 비율이다.",
+    "회피경로는 현재 침수된 도로를 피한다는 의미가 아니라, 과거 침수흔적과 중첩된 baseline edge를 제외해도 OSM 경로가 존재하는지 검증한 실험이다.",
+    "Risk Score, 강수 임계값, MFP, LAD, Alan은 구현하지 않았다."
+  ],
+  "output_files": [
+    "data\\processed\\osm_routing_targeted\\all_baseline_routes.csv",
+    "data\\processed\\osm_routing_targeted\\all_baseline_flood_exposure.csv",
+    "data\\processed\\osm_routing_targeted\\baseline_flood_exposed_od_candidates.csv",
+    "data\\processed\\osm_routing_targeted\\targeted_route_alternatives.csv",
+    "data\\processed\\osm_routing_targeted\\historical_flood_trace_avoidance_routes.csv",
+    "data\\processed\\osm_routing_targeted\\top_targeted_mvp_candidates.json",
+    "data\\processed\\osm_routing_targeted\\top_targeted_mvp_candidates.geojson",
+    "data\\processed\\osm_routing_targeted\\targeted_routing_analysis_report.json"
+  ]
+}
