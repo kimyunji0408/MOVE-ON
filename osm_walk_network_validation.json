@@ -1,0 +1,25 @@
+{
+  "download_success": true,
+  "downloaded_this_run": false,
+  "graphml_saved": true,
+  "graphml_path": "data\\raw\\osm\\eunpyeong_walk.graphml",
+  "node_count": 16002,
+  "edge_count": 45200,
+  "crs": "epsg:4326",
+  "bbox": [
+    126.8790436,
+    37.571275,
+    126.9448945,
+    37.6552753
+  ],
+  "connected_component_count": 61,
+  "largest_connected_component_ratio": 0.988126,
+  "edge_length": {
+    "min": 0.16878770499926862,
+    "median": 33.489791593985196,
+    "max": 2445.8732234595877
+  },
+  "geometry_missing_count": 0,
+  "pedestrian_routing_suitable": true,
+  "largest_component_note": "retain_all=True로 전체 graph를 보존했으며, 경로별 connected component 여부를 routing 시 확인한다."
+}
