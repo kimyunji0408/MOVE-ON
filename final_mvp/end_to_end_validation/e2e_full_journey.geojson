@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "e2e_full_journey",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "segment_id": "segment_1_first_mile", "mode": "walk", "route_role": "first_mile", "start": "은평구청", "end": "녹번역 3호선", "route_length_m": 462.059, "flood_overlap_length_m": 0.0 }, "geometry": { "type": "LineString", "coordinates": [ [ 126.9305469, 37.6012676 ], [ 126.9306909, 37.6012535 ], [ 126.930904, 37.6012327 ], [ 126.9313064, 37.6012039 ], [ 126.931462, 37.6012326 ], [ 126.9318376, 37.6011916 ], [ 126.9320339, 37.6011766 ], [ 126.932565, 37.6011239 ], [ 126.93341, 37.60104 ], [ 126.9336714, 37.6010209 ], [ 126.933805, 37.6010111 ], [ 126.934022, 37.6009952 ], [ 126.93423, 37.60098 ], [ 126.9352857, 37.6009025 ], [ 126.935759, 37.6008778 ] ] } }
-]
-}
