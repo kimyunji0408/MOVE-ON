@@ -1,0 +1,102 @@
+[
+  {
+    "route_id": "Route A",
+    "station_order": 1,
+    "station": "불광",
+    "line": "3호선",
+    "flood_2022_count_300m": 7,
+    "flood_2023_count_300m": 0,
+    "flood_2024_count_300m": 0,
+    "flood_2025_count_300m": 16,
+    "flood_2022_2025_total_300m": 23,
+    "elevator_available": true,
+    "wheelchair_lift_available": false,
+    "accessibility_status": "available_data",
+    "elevator_count": 4,
+    "wheelchair_lift_count": 0,
+    "operation_status_values_raw": [
+      "M"
+    ],
+    "accessibility_record_count": 4
+  },
+  {
+    "route_id": "Route A",
+    "station_order": 2,
+    "station": "연신내",
+    "line": "3호선",
+    "flood_2022_count_300m": 5,
+    "flood_2023_count_300m": 0,
+    "flood_2024_count_300m": 0,
+    "flood_2025_count_300m": 63,
+    "flood_2022_2025_total_300m": 68,
+    "elevator_available": true,
+    "wheelchair_lift_available": false,
+    "accessibility_status": "available_data",
+    "elevator_count": 1,
+    "wheelchair_lift_count": 0,
+    "operation_status_values_raw": [
+      "M"
+    ],
+    "accessibility_record_count": 1
+  },
+  {
+    "route_id": "Route B",
+    "station_order": 1,
+    "station": "불광",
+    "line": "6호선",
+    "flood_2022_count_300m": 7,
+    "flood_2023_count_300m": 0,
+    "flood_2024_count_300m": 0,
+    "flood_2025_count_300m": 17,
+    "flood_2022_2025_total_300m": 24,
+    "elevator_available": true,
+    "wheelchair_lift_available": true,
+    "accessibility_status": "available_data",
+    "elevator_count": 3,
+    "wheelchair_lift_count": 2,
+    "operation_status_values_raw": [
+      "M"
+    ],
+    "accessibility_record_count": 5
+  },
+  {
+    "route_id": "Route B",
+    "station_order": 2,
+    "station": "독바위",
+    "line": "6호선",
+    "flood_2022_count_300m": 23,
+    "flood_2023_count_300m": 0,
+    "flood_2024_count_300m": 1,
+    "flood_2025_count_300m": 21,
+    "flood_2022_2025_total_300m": 45,
+    "elevator_available": true,
+    "wheelchair_lift_available": false,
+    "accessibility_status": "available_data",
+    "elevator_count": 2,
+    "wheelchair_lift_count": 0,
+    "operation_status_values_raw": [
+      "M"
+    ],
+    "accessibility_record_count": 2
+  },
+  {
+    "route_id": "Route B",
+    "station_order": 3,
+    "station": "연신내",
+    "line": "6호선",
+    "flood_2022_count_300m": 5,
+    "flood_2023_count_300m": 0,
+    "flood_2024_count_300m": 0,
+    "flood_2025_count_300m": 65,
+    "flood_2022_2025_total_300m": 70,
+    "elevator_available": true,
+    "wheelchair_lift_available": false,
+    "accessibility_status": "available_data",
+    "elevator_count": 2,
+    "wheelchair_lift_count": 0,
+    "operation_status_values_raw": [
+      "M"
+    ],
+    "accessibility_record_count": 2
+  }
+]

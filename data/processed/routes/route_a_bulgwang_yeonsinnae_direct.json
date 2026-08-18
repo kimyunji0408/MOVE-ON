@@ -1,0 +1,27 @@
+{
+  "route_id": "Route A",
+  "search_type": "duration",
+  "origin": "불광",
+  "destination": "연신내",
+  "via_stations": [],
+  "total_distance": 1300,
+  "total_required_time_raw": 90,
+  "transfer_count": 0,
+  "transfer_stations": [],
+  "station_sequence": [
+    "불광",
+    "연신내"
+  ],
+  "line_sequence": [
+    "3호선"
+  ],
+  "segments": [
+    {
+      "departure_station": "불광",
+      "arrival_station": "연신내",
+      "line": "3호선",
+      "distance_raw": 1300,
+      "transfer_yn": "N"
+    }
+  ]
+}

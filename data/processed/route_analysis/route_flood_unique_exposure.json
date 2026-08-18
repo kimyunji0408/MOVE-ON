@@ -1,0 +1,53 @@
+[
+  {
+    "route_id": "route_a",
+    "route_label": "Route A",
+    "station_sequence": [
+      "불광",
+      "연신내"
+    ],
+    "line_sequence": [
+      "3호선"
+    ],
+    "station_count": 2,
+    "buffer_radius_m": 300,
+    "station_sum_2022_2025_300m": 91,
+    "flood_unique_2022_300m": 12,
+    "flood_unique_2023_300m": 0,
+    "flood_unique_2024_300m": 0,
+    "flood_unique_2025_300m": 79,
+    "flood_unique_2022_2025_total_300m": 91,
+    "duplicate_count_removed": 0,
+    "route_buffer_area_m2": 564578.7282982775,
+    "route_buffer_area_km2": 0.5645787282982775,
+    "feature_id_column": "__feature_index",
+    "yearly_unique_sum_2022_2025": 91,
+    "yearly_sum_matches_total": true
+  },
+  {
+    "route_id": "route_b",
+    "route_label": "Route B",
+    "station_sequence": [
+      "불광",
+      "독바위",
+      "연신내"
+    ],
+    "line_sequence": [
+      "6호선"
+    ],
+    "station_count": 3,
+    "buffer_radius_m": 300,
+    "station_sum_2022_2025_300m": 139,
+    "flood_unique_2022_300m": 35,
+    "flood_unique_2023_300m": 0,
+    "flood_unique_2024_300m": 1,
+    "flood_unique_2025_300m": 103,
+    "flood_unique_2022_2025_total_300m": 139,
+    "duplicate_count_removed": 0,
+    "route_buffer_area_m2": 846868.0924474164,
+    "route_buffer_area_km2": 0.8468680924474163,
+    "feature_id_column": "__feature_index",
+    "yearly_unique_sum_2022_2025": 139,
+    "yearly_sum_matches_total": true
+  }
+]

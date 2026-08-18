@@ -1,0 +1,208 @@
+{
+  "input_files": {
+    "mobility_facilities": "data\\raw\\mobility\\1750212969170_20260818161023.geojson",
+    "pedestrian_safe_routes_source": "data\\raw\\mobility\\1694517815685_20260818161308.geojson"
+  },
+  "outputs": {
+    "mobility_facilities": "data\\processed\\mobility\\eunpyeong_mobility_facilities.geojson",
+    "pedestrian_safe_routes": "data\\processed\\mobility\\eunpyeong_pedestrian_safe_routes.geojson",
+    "pedestrian_support_points": "data\\processed\\mobility\\eunpyeong_pedestrian_support_points.geojson"
+  },
+  "mobility_facilities": {
+    "original_feature_count": 649,
+    "processed_feature_count": 649,
+    "geometry_counts": {
+      "Point": 643,
+      "LineString": 5,
+      "Polygon": 1,
+      "Other": 0
+    },
+    "missing_coordinate_count": 0,
+    "bbox": [
+      126.8852,
+      37.5766,
+      126.9396,
+      37.6505
+    ],
+    "appears_wgs84": true
+  },
+  "pedestrian_source": {
+    "original_feature_count": 30722,
+    "eunpyeong_address_filter_count": 1159,
+    "eunpyeong_geometry_counts": {
+      "Point": 764,
+      "LineString": 395,
+      "Polygon": 0,
+      "Other": 0
+    },
+    "pedestrian_safe_route_linestring_count": 395,
+    "pedestrian_safe_route_geometry_counts": {
+      "Point": 0,
+      "LineString": 395,
+      "Polygon": 0,
+      "Other": 0
+    },
+    "support_point_count": 764,
+    "missing_coordinate_count": 0,
+    "source_bbox": [
+      126.7636,
+      37.4291,
+      127.2024,
+      37.6963
+    ],
+    "eunpyeong_bbox": [
+      126.8932,
+      37.5774,
+      126.9363,
+      37.6376
+    ],
+    "pedestrian_safe_route_bbox": [
+      126.8936,
+      37.5811,
+      126.9358,
+      37.6371
+    ],
+    "appears_wgs84": true,
+    "filter_method": "ADDR_NEW or ADDR_OLD contains 은평구; no Eunpyeong boundary GeoJSON was found in the project."
+  },
+  "normalized_properties": {
+    "mobility_facilities": [
+      "source_id",
+      "source_sub_id",
+      "name",
+      "address_old",
+      "address_new",
+      "lon",
+      "lat",
+      "status",
+      "geometry_type",
+      "facility_type",
+      "slope_degree",
+      "ramp_available",
+      "automatic_door",
+      "name_value_map"
+    ],
+    "pedestrian_safe_routes": [
+      "source_id",
+      "source_sub_id",
+      "destination_name",
+      "address_old",
+      "address_new",
+      "route_length_m",
+      "lon",
+      "lat",
+      "geometry_type",
+      "slope_difficulty_raw",
+      "slope_risk",
+      "name_value_map"
+    ]
+  },
+  "slope_note": "보행 경로의 앞,뒤 경사 난이도는 feature별 실제 경사값이 아니라 범례/설명 문자열로 확인되어 slope_risk=unknown으로 보존했다.",
+  "station_proximity_counts": [
+    {
+      "station": "연신내",
+      "line": "6호선",
+      "radius_m": 100,
+      "mobility_facility_count": 6,
+      "pedestrian_safe_route_linestring_count": 14
+    },
+    {
+      "station": "연신내",
+      "line": "6호선",
+      "radius_m": 300,
+      "mobility_facility_count": 24,
+      "pedestrian_safe_route_linestring_count": 19
+    },
+    {
+      "station": "연신내",
+      "line": "6호선",
+      "radius_m": 500,
+      "mobility_facility_count": 49,
+      "pedestrian_safe_route_linestring_count": 31
+    },
+    {
+      "station": "독바위",
+      "line": "6호선",
+      "radius_m": 100,
+      "mobility_facility_count": 6,
+      "pedestrian_safe_route_linestring_count": 7
+    },
+    {
+      "station": "독바위",
+      "line": "6호선",
+      "radius_m": 300,
+      "mobility_facility_count": 11,
+      "pedestrian_safe_route_linestring_count": 12
+    },
+    {
+      "station": "독바위",
+      "line": "6호선",
+      "radius_m": 500,
+      "mobility_facility_count": 22,
+      "pedestrian_safe_route_linestring_count": 33
+    },
+    {
+      "station": "불광",
+      "line": "6호선",
+      "radius_m": 100,
+      "mobility_facility_count": 2,
+      "pedestrian_safe_route_linestring_count": 11
+    },
+    {
+      "station": "불광",
+      "line": "6호선",
+      "radius_m": 300,
+      "mobility_facility_count": 12,
+      "pedestrian_safe_route_linestring_count": 25
+    },
+    {
+      "station": "불광",
+      "line": "6호선",
+      "radius_m": 500,
+      "mobility_facility_count": 39,
+      "pedestrian_safe_route_linestring_count": 25
+    },
+    {
+      "station": "불광",
+      "line": "3호선",
+      "radius_m": 100,
+      "mobility_facility_count": 4,
+      "pedestrian_safe_route_linestring_count": 11
+    },
+    {
+      "station": "불광",
+      "line": "3호선",
+      "radius_m": 300,
+      "mobility_facility_count": 19,
+      "pedestrian_safe_route_linestring_count": 25
+    },
+    {
+      "station": "불광",
+      "line": "3호선",
+      "radius_m": 500,
+      "mobility_facility_count": 38,
+      "pedestrian_safe_route_linestring_count": 25
+    },
+    {
+      "station": "연신내",
+      "line": "3호선",
+      "radius_m": 100,
+      "mobility_facility_count": 5,
+      "pedestrian_safe_route_linestring_count": 11
+    },
+    {
+      "station": "연신내",
+      "line": "3호선",
+      "radius_m": 300,
+      "mobility_facility_count": 24,
+      "pedestrian_safe_route_linestring_count": 19
+    },
+    {
+      "station": "연신내",
+      "line": "3호선",
+      "radius_m": 500,
+      "mobility_facility_count": 44,
+      "pedestrian_safe_route_linestring_count": 27
+    }
+  ]
+}
