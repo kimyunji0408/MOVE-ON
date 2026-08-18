@@ -1,0 +1,467 @@
+{
+  "generated_at": "2026-08-18 16:43:08",
+  "encoding": {
+    "status": "PASS",
+    "mobility_facility_raw": {
+      "file": "data\\raw\\mobility\\1750212969170_20260818161023.geojson",
+      "has_utf8_bom": false,
+      "candidates": [
+        {
+          "encoding": "UTF-8",
+          "decoded": true,
+          "json_parsed": true,
+          "korean_keyword_hits_in_preview": 400,
+          "error_type": null
+        },
+        {
+          "encoding": "UTF-8-SIG",
+          "decoded": true,
+          "json_parsed": true,
+          "korean_keyword_hits_in_preview": 400,
+          "error_type": null
+        },
+        {
+          "encoding": "CP949",
+          "decoded": true,
+          "json_parsed": false,
+          "korean_keyword_hits_in_preview": 0,
+          "error_type": "ArgumentException"
+        }
+      ],
+      "selected_encoding": "UTF-8"
+    },
+    "pedestrian_raw": {
+      "file": "data\\raw\\mobility\\1694517815685_20260818161308.geojson",
+      "has_utf8_bom": false,
+      "candidates": [
+        {
+          "encoding": "UTF-8",
+          "decoded": true,
+          "json_parsed": true,
+          "korean_keyword_hits_in_preview": 98,
+          "error_type": null
+        },
+        {
+          "encoding": "UTF-8-SIG",
+          "decoded": true,
+          "json_parsed": true,
+          "korean_keyword_hits_in_preview": 98,
+          "error_type": null
+        },
+        {
+          "encoding": "CP949",
+          "decoded": true,
+          "json_parsed": false,
+          "korean_keyword_hits_in_preview": 0,
+          "error_type": "ArgumentException"
+        }
+      ],
+      "selected_encoding": "UTF-8"
+    }
+  },
+  "eunpyeong_filtering": {
+    "status": "PASS",
+    "filter_method": "ADDR_NEW or ADDR_OLD contains 은평구",
+    "original_feature_count": 30722,
+    "addr_new_or_old_contains_eunpyeong_count": 1159,
+    "address_examples": [
+      {
+        "contents_name": "녹번동주민센터",
+        "address_new": "서울특별시 은평구 은평로 226",
+        "address_old": "서울특별시 은평구 응암동  4-1",
+        "geometry_type": "LineString"
+      },
+      {
+        "contents_name": "응암제2동주민센터",
+        "address_new": "서울특별시 은평구 응암로22길 9-4",
+        "address_old": "서울특별시 은평구 응암동 427-84",
+        "geometry_type": "LineString"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 녹번동  82-39",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 녹번동  79-21",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 연서로27길 26",
+        "address_old": "서울특별시 은평구 갈현동 452-16",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 은평로2길 5",
+        "address_old": "서울특별시 은평구 신사동 26-36",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 증산로17길 36",
+        "address_old": "서울특별시 은평구 신사동 348-22",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 신사동  352-1",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 불광동  213",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 연서로29길 7",
+        "address_old": "서울특별시 은평구 갈현동 456-6",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 불광동  177-21",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 증산로 306",
+        "address_old": "서울특별시 은평구 증산동 199-8",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 가좌로10길 11-10",
+        "address_old": "서울특별시 은평구 응암동 583-8",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 역촌동  81-45",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 연서로 347",
+        "address_old": "서울특별시 은평구 불광동  73-1",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 갈현로 294",
+        "address_old": "서울특별시 은평구 갈현동  389-9",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 녹번동  79-17",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 응암동  604-2",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "서울특별시 은평구 불광로 179-6",
+        "address_old": "서울특별시 은평구 불광동  177-3",
+        "geometry_type": "Point"
+      },
+      {
+        "contents_name": "빗물받이",
+        "address_new": "",
+        "address_old": "서울특별시 은평구 불광동  90-8",
+        "geometry_type": "Point"
+      }
+    ],
+    "address_prefix_distribution": {
+      "prefix": "서울특별시 은평구",
+      "count": 1159
+    },
+    "raw_source_bbox": [
+      126.7636,
+      37.4291,
+      127.2024,
+      37.6963
+    ],
+    "filtered_eunpyeong_bbox": [
+      126.8932,
+      37.5774,
+      126.9363,
+      37.6376
+    ],
+    "filtered_eunpyeong_linestring_bbox": [
+      126.8936,
+      37.5811,
+      126.9358,
+      37.6371
+    ],
+    "previous_summary_bbox_issue": "mobility_geojson_check_summary.json stored the full pedestrian source bbox, not the filtered Eunpyeong bbox."
+  },
+  "geometry_validity": {
+    "status": "PASS",
+    "mobility_facilities": {
+      "checked_features": 649,
+      "invalid_basic_geometry_count": 0,
+      "status": "PASS"
+    },
+    "pedestrian_safe_routes": {
+      "checked_features": 395,
+      "invalid_basic_geometry_count": 0,
+      "status": "PASS"
+    },
+    "pedestrian_linestring_count": 395,
+    "line_outlier_rule": "geometry_length_m_approx > 3 * p95",
+    "line_length_p95_m_approx": 850.14,
+    "line_outlier_count": 0,
+    "line_outlier_examples": []
+  },
+  "coordinate_system": {
+    "status": "PASS",
+    "mobility_facility_bbox": [
+      126.8852,
+      37.5766,
+      126.9396,
+      37.6505
+    ],
+    "pedestrian_safe_route_bbox": [
+      126.8936,
+      37.5811,
+      126.9358,
+      37.6371
+    ],
+    "appears_wgs84_lon_lat": true
+  },
+  "slope_usability": {
+    "status": "WARNING",
+    "raw_slope_analysis": {
+      "field_names": [
+        {
+          "field": "보행 경로의 앞,뒤 경사 난이도",
+          "count": 12205
+        }
+      ],
+      "examples": [
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)"
+      ],
+      "unique_values": [
+        {
+          "value": "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+          "count": 4412
+        },
+        {
+          "value": "난이도 상_빨간색 (7˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (5~7˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (2~5˚)\n난이도 하_초록색 (0~2˚)",
+          "count": 3339
+        },
+        {
+          "value": "난이도 상_빨간색 (8˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (6~8˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (3~6˚)\n난이도 하_초록색 (0~3˚)",
+          "count": 2160
+        },
+        {
+          "value": "난이도 상_빨간색 (9˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (7~9˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (5~7˚)\n난이도 하_초록색 (0~5˚)",
+          "count": 1352
+        },
+        {
+          "value": "난이도 상_빨간색 (9˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (8~9˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (7~8˚)\n난이도 하_초록색 (0~7˚)",
+          "count": 942
+        }
+      ]
+    },
+    "eunpyeong_route_slope_analysis": {
+      "field_names": [
+        {
+          "field": "보행 경로의 앞,뒤 경사 난이도",
+          "count": 395
+        }
+      ],
+      "examples": [
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+        "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)"
+      ],
+      "unique_values": [
+        {
+          "value": "난이도 상_빨간색 (3˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (2~3˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (1~2˚)\n난이도 하_초록색 (0~1˚)",
+          "count": 143
+        },
+        {
+          "value": "난이도 상_빨간색 (7˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (5~7˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (2~5˚)\n난이도 하_초록색 (0~2˚)",
+          "count": 103
+        },
+        {
+          "value": "난이도 상_빨간색 (8˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (6~8˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (3~6˚)\n난이도 하_초록색 (0~3˚)",
+          "count": 74
+        },
+        {
+          "value": "난이도 상_빨간색 (9˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (7~9˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (5~7˚)\n난이도 하_초록색 (0~5˚)",
+          "count": 38
+        },
+        {
+          "value": "난이도 상_빨간색 (9˚이상) -> 보행약자가 이동하기엔 어려움이 있음\n난이도 중상_주황색 (8~9˚) -> 보호자 동행시 이동 가능\n난이도 중_노란색 (7~8˚)\n난이도 하_초록색 (0~7˚)",
+          "count": 37
+        }
+      ]
+    },
+    "conclusion": "보행안전경로 slope field is a legend/explanation string, not a feature-level measured slope value; keep slope_risk=unknown."
+  },
+  "station_proximity_counts": [
+    {
+      "station": "연신내",
+      "line": "6호선",
+      "radius_m": 100,
+      "mobility_facility_count": 6,
+      "pedestrian_linestring_count": 14
+    },
+    {
+      "station": "연신내",
+      "line": "6호선",
+      "radius_m": 300,
+      "mobility_facility_count": 24,
+      "pedestrian_linestring_count": 19
+    },
+    {
+      "station": "연신내",
+      "line": "6호선",
+      "radius_m": 500,
+      "mobility_facility_count": 49,
+      "pedestrian_linestring_count": 31
+    },
+    {
+      "station": "독바위",
+      "line": "6호선",
+      "radius_m": 100,
+      "mobility_facility_count": 6,
+      "pedestrian_linestring_count": 7
+    },
+    {
+      "station": "독바위",
+      "line": "6호선",
+      "radius_m": 300,
+      "mobility_facility_count": 11,
+      "pedestrian_linestring_count": 12
+    },
+    {
+      "station": "독바위",
+      "line": "6호선",
+      "radius_m": 500,
+      "mobility_facility_count": 22,
+      "pedestrian_linestring_count": 33
+    },
+    {
+      "station": "불광",
+      "line": "6호선",
+      "radius_m": 100,
+      "mobility_facility_count": 2,
+      "pedestrian_linestring_count": 11
+    },
+    {
+      "station": "불광",
+      "line": "6호선",
+      "radius_m": 300,
+      "mobility_facility_count": 12,
+      "pedestrian_linestring_count": 25
+    },
+    {
+      "station": "불광",
+      "line": "6호선",
+      "radius_m": 500,
+      "mobility_facility_count": 39,
+      "pedestrian_linestring_count": 25
+    },
+    {
+      "station": "불광",
+      "line": "3호선",
+      "radius_m": 100,
+      "mobility_facility_count": 4,
+      "pedestrian_linestring_count": 11
+    },
+    {
+      "station": "불광",
+      "line": "3호선",
+      "radius_m": 300,
+      "mobility_facility_count": 19,
+      "pedestrian_linestring_count": 25
+    },
+    {
+      "station": "불광",
+      "line": "3호선",
+      "radius_m": 500,
+      "mobility_facility_count": 38,
+      "pedestrian_linestring_count": 25
+    },
+    {
+      "station": "연신내",
+      "line": "3호선",
+      "radius_m": 100,
+      "mobility_facility_count": 5,
+      "pedestrian_linestring_count": 11
+    },
+    {
+      "station": "연신내",
+      "line": "3호선",
+      "radius_m": 300,
+      "mobility_facility_count": 24,
+      "pedestrian_linestring_count": 19
+    },
+    {
+      "station": "연신내",
+      "line": "3호선",
+      "radius_m": 500,
+      "mobility_facility_count": 44,
+      "pedestrian_linestring_count": 27
+    }
+  ],
+  "route_mvp_readiness": {
+    "can_continue_bulgwang_dokbawi": true,
+    "can_continue_bulgwang_yeonsinnae": true,
+    "note": "Proceed with geometry/count exposure comparison, but do not use pedestrian slope legend text as Risk Score input."
+  }
+}
