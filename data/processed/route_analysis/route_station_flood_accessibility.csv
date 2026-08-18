@@ -1,6 +1,0 @@
-﻿route_id,station_order,station,line,flood_2022_count_300m,flood_2023_count_300m,flood_2024_count_300m,flood_2025_count_300m,flood_2022_2025_total_300m,elevator_available,wheelchair_lift_available,accessibility_status,elevator_count,wheelchair_lift_count,operation_status_values_raw,accessibility_record_count
-Route A,1,불광,3호선,7,0,0,16,23,True,False,available_data,4,0,['M'],4
-Route A,2,연신내,3호선,5,0,0,63,68,True,False,available_data,1,0,['M'],1
-Route B,1,불광,6호선,7,0,0,17,24,True,True,available_data,3,2,['M'],5
-Route B,2,독바위,6호선,23,0,1,21,45,True,False,available_data,2,0,['M'],2
-Route B,3,연신내,6호선,5,0,0,65,70,True,False,available_data,2,0,['M'],2
